@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devfinder</title>
+  <!-- to use this font -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+ <!-- for styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- we take the page as a container and then applying html by dividing -->
+  <div class="container">
+    <!-- the upper part is called as header here we gave heading and the button for changing dark-light theme -->
+    <header class="header">
+      <h1>devfinder</h1>
+      <!-- button for dark and light mode logic is handled at js file -->
+      <button class="theme-toggle">
+        <span>DARK</span>
+        <i class="fa-solid fa-moon"></i>
+      </button>
+    </header>
+<!-- just below the header we are placing search bar as given in design -->
+    <div class="search-bar">
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Search GitHub username…" />
+      <button id="searchBtn">Search</button>
+    </div>
+<!-- now below searchbar the user info we will be given in the form of card as it is a dynamic value using js -->
+    <div id="userCard" class="user-card"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

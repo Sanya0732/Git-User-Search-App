@@ -1,0 +1,232 @@
+/* * is used for universal selector  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: #F6F8FF;
+  color: #4B6A9B;
+  /* adds spacing aroung entire page -> padding  */
+  padding: 2rem;
+}
+
+.container {
+  max-width: 730px;
+  /* margin helps in space outside the element like seprating from other elements */
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* this add space only below the elements */
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #222731;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #4B6A9B;
+  display: flex;
+  /* align-item to alien all the elements in the vertical */
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+body.dark {
+  background-color: #141D2F;
+  color: white;
+}
+
+body.dark .header h1 {
+  color: white;
+}
+
+body.dark .theme-toggle {
+  color: white;
+  
+}
+
+body.dark .search-bar {
+  background-color: #1E2A47;
+}
+
+body.dark .search-bar input {
+  color: white;
+}
+
+body.dark .search-icon {
+  color: white;
+}
+
+body.dark .search-bar button {
+  background-color: #0079FF;
+}
+
+body.dark .user-card {
+  background-color: #1E2A47;
+  color: white;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #FEFEFE;
+  border-radius: 15px;
+  padding: 10px 16px;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  margin-bottom: 2rem;
+}
+
+.search-icon {
+  font-size: 20px;
+  color: #0079FF;
+  margin-right: 16px;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #222731;
+  background-color: transparent;
+}
+
+.search-bar button {
+  background-color: #0079FF;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.user-card {
+  background-color: #FEFEFE;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+body.dark .user-card {
+  background-color: #1E2A47;
+}
+
+.top-section {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.user-info h2 {
+  font-size: 20px;
+  color: #2B3442;
+}
+
+.user-info .username {
+  color: #0079FF;
+}
+
+.user-info .join-date {
+  font-size: 14px;
+  color: #697C9A;
+}
+
+.bio {
+  font-style: italic;
+  color: #4B6A9B;
+}
+body.dark .bio {
+  color: #F6F8FF;
+}
+
+.stats {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  background-color: #F6F8FF;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  
+}
+
+body.dark .stats {
+  background-color: #141D2F;
+}
+
+.stats p {
+  margin: 0;
+  text-align: center;
+}
+.stats div{
+  flex: 1;
+}
+
+.count {
+  font-weight: bold;
+  font-size: 18px;
+  color: #2B3442;
+}
+
+.links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+
+
+body.dark .user-info h2,
+body.dark .count {
+  color: white;
+}
+
+.links p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #4B6A9B;
+}
+
+.links a {
+  color: #4B6A9B;
+  text-decoration: none;
+}
+
+body.dark .links p,
+body.dark .links a {
+  color: #F6F8FF;
+}
+
+.links i {
+  margin-right: 10px;
+  color: #4B6A9B;
+}
+
+body.dark .links i {
+  color: #F6F8FF;
+}
